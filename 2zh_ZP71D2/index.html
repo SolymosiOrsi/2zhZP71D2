@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://192.168.0.11:8080/styles/style.css">
+    <title>Üdvözöllek a Turing Machine társasjáték bemutató oldalán!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Üdvözöllek a Turing Machine társasjáték bemutató oldalán!</h1>
+    </header>
+
+    <main>
+        <p>Ez a weboldal egy összefoglaló a Turing Machine társasjátékról. Bővebb leírásért keresd fel a társasjáték mellékelt szabálykönyvét.</p>
+    
+        <section class="game-info">
+            <h2>Alapinformációk</h2>
+            <dl>
+                <dt>Játékosszám:</dt>
+                <dd>1 – 4 fő</dd>
+                
+                <dt>Ideális játékosszám:</dt>
+                <dd>1 fő</dd>
+                
+                <dt>Játékidő:</dt>
+                <dd>20 perc</dd>
+                
+                <dt>Javasolt életkor min.:</dt>
+                <dd>14</dd>
+                
+                <dt>Összetettség:</dt>
+                <dd>Haladó</dd>
+                
+                <dt>Kategória:</dt>
+                <dd>Stratégia</dd>
+            </dl>
+        </section>
+
+        <section class="game-info">
+            <h2>A játék alapötlete</h2>
+            <p>A Turing Machine-ban a logikádra hagyatkozva kell megtalálnod egy háromjegyű számsort. A kód 3 darab 1-5 közötti számjegyből áll. Feladatod a többieket megelőzve rájönni a titkos kódra!</p>
+        </section>
+
+        <section class="game-info">
+            <h2>Eredete</h2>
+            <p>Alan Turing brit matematikus és kriptoanalitikus jelentős mértékben hozzájárult a számítógépek megszületéséhez. Most pedig itt a lehetőség, hogy az elektromosság és elektronika nélkül működő, kezdetleges számítógép segítségével fejthess titkos kódokat! A legrátermettebb kódfejtők a Turing Machine segítségével igyekszenek feltörni egy háromjegyű kódot. Ragadj ceruzát, és összpontosíts! A verseny indul.</p>
+        </section>
+
+        <section class="game-info">
+            <h2>Játék menete</h2>
+            <p>Minden forduló három lépésből áll, melyeket társaiddal egyszerre sorban hajtasz végre:</p>
+            <ol>
+                <li>Lyukkártyák segítségével megalkotsz egy kódot.</li>
+                <li>Felteszel három kérdést a gépnek.</li>
+                <li>Megvizsgálod a kapott válaszokat.</li>
+            </ol>
+            <p>Ha a kódfejtő megérzéseid azt súgják, hogy a válaszok alapján dedukáltad az egyetlen lehetséges kódot, írd fel a lapodra, és ellenőrizd válaszod a szabálykönyvben (vagy a webalapú alkalmazásban, ha azzal játszotok). Ha helyes, nyertél, és a játéknak azonnal vége; ha helytelen… neved feledésbe merül, és a többiek folytatják a hajszát.</p>
+        </section>
+
+        <section class="game-info">
+            <h2>Doboz tartalma</h2>
+            <div class="box-content">
+                <ul class="box-list">
+                    <li>1 gép</li>
+                    <li>1 lyukkártyatartó</li>
+                    <li>45 lyukkártya</li>
+                    <li>48 feltételkártya</li>
+                    <li>95 igazolókártya</li>
+                    <li>50 jegyzetlap</li>
+                    <li>4 játékossegédlet</li>
+                    <li>1 letörölhető filctoll</li>
+                </ul>
+                <img src="/images/kep_a_dobozrol.png" alt="Doboz tartalma" class="box-content-image">
+            </div>
+        </section>
+    </main>
+    
+    í   <footer>
+        <button id="megoldasGomb">Feladatok megoldása</button>
+    </footer>
+
+    <script>
+        var megoldasGomb = document.getElementById("megoldasGomb");
+
+        megoldasGomb.addEventListener("click", function() {
+            window.location.href = "termek.html";
+        });
+    </script>
+</body>
+</html>

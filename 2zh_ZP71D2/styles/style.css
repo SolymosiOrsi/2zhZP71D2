@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+header, main, footer {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+header {
+    background-color: green;
+    color: white;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    margin-top: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.game-info {
+    margin-top: 30px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+/* Új stílus a kép konténeréhez */
+.box-content-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.box-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.box-list {
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.box-content-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    margin-top: 3px;
+    display: block;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px;
+}

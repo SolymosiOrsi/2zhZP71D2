@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feladatok megoldása</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      text-align: center;
+      background-image: url('images/hatter.jpg'); /* Háttérkép beállítása */
+      background-size: cover; /* Teljes méretre igazítás */
+      color: rgb(0, 0, 0); /* Szöveg színének beállítása */
+      background-color: rgba(0, 0, 0, 0.5); /* Háttér átlátszóságának beállítása */
+    }
+    h1 {
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 8px 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Feladatok megoldása</h1>
+
+  <!-- Paralelogramma számítás űrlap -->
+  <h2>Paralelogramma Számítás</h2>
+  <label for="alapInput">Alap:</label>
+  <input type="number" id="alapInput" />
+
+  <label for="magassagInput">Magasság:</label>
+  <input type="number" id="magassagInput" />
+
+  <label for="oldalAInput">Oldal A:</label>
+  <input type="number" id="oldalAInput" />
+
+  <label for="oldalBInput">Oldal B:</label>
+  <input type="number" id="oldalBInput" />
+
+  <label for="szogInput">Szög:</label>
+  <input type="number" id="szogInput" />
+
+  <button id="szamolButton">Paralelogramma Terület Számolás</button>
+  <div id="paralelogrammaEredmenyDiv"></div>
+  <!-- End Paralelogramma számítás űrlap -->
+
+  <hr>
+
+  <!-- Véletlenszerű Elemválasztás űrlap -->
+  <h2>Véletlenszerű Elemválasztás</h2>
+  <label for="listaInput">Lista (vesszővel elválasztva):</label>
+  <input type="text" id="listaInput" />
+
+  <button id="valasztButton">Elemek Véletlenszerű Kiválasztása</button>
+  <div id="valasztEredmenyDiv"></div>
+  <!-- End Véletlenszerű Elemválasztás űrlap -->
+
+  <hr>
+
+  <!-- Termékkezelés űrlap -->
+  <h2>Termékkezelés</h2>
+  <label for="nevInput">Név:</label>
+  <input type="text" id="nevInput" />
+
+  <label for="arInput">Ár:</label>
+  <input type="number" id="arInput" />
+
+  <button id="hozzaadButton">Hozzáadás</button>
+
+  <div id="eredmenyDiv"></div>
+
+  <table>
+      <thead>
+          <tr>
+              <th>Név</th>
+              <th>Ár</th>
+              <th></th>
+          </tr>
+      </thead>
+      <tbody id="tablaBody"></tbody>
+  </table>
+  <!-- End Termékkezelés űrlap -->
+
+  <!-- Vissza a Nyitóoldalra gomb -->
+  <button id="visszaButton">Vissza a Nyitóoldalra</button>
+
+  <script type="text/javascript" src="script/termek.js"></script>
+  <script type="text/javascript" src="script/paralelogramma.js"></script>
+  <script type="text/javascript" src="script/veletlen.js"></script>
+
+</body>
+</html>
